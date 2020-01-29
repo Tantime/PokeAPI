@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
                         height = Double.parseDouble(foundPoke.getHeight()) / 10;
                         textViewHeight.setText("Height: " + height + "m");
                         weight = Double.parseDouble(foundPoke.getWeight()) / 10;
-                        textViewWeight.setText("Weight :" + weight + "kg");
+                        textViewWeight.setText("Weight: " + weight + "kg");
                     }
                 }
 
@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
                         height = Double.parseDouble(foundPoke.getHeight()) / 10;
                         textViewHeight.setText("Height: " + height + "m");
                         weight = Double.parseDouble(foundPoke.getWeight()) / 10;
-                        textViewWeight.setText("Weight :" + weight + "kg");
+                        textViewWeight.setText("Weight: " + weight + "kg");
                     }
                 }
 

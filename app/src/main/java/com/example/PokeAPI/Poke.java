@@ -1,11 +1,12 @@
 package com.example.PokeAPI;
 
+import java.util.List;
+
 public class Poke {
 
     private String name;
     private String height;
     private String weight;
-    private String types;
 
     public Poke() {
 
@@ -33,13 +34,5 @@ public class Poke {
 
     public void setWeight(String weight) {
         this.weight = weight;
-    }
-
-    public String getTypes() {
-        return types;
-    }
-
-    public void setTypes(String types) {
-        this.types = types;
     }
 }
