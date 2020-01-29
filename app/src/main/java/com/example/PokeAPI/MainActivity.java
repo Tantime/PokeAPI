@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
                     Poke foundPoke = response.body();
                     // check if the body isn't null
                     if (foundPoke != null) {
-                        textViewName.setText(foundPoke.getName());
+                        textViewName.setText("Name: " + foundPoke.getName());
                         height = Double.parseDouble(foundPoke.getHeight()) / 10;
                         textViewHeight.setText("Height: " + height + "m");
                         weight = Double.parseDouble(foundPoke.getWeight()) / 10;
@@ -157,11 +157,35 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void pokeByName(PokeService pokeService) {
-        if(!searchName.equals("")) {
-            Call<Poke> pokeCall = pokeService.getPokemonByName(searchName);
-        }
-    }
+//    public void pokeByName(PokeService pokeService) {
+//        if(searchName.equals("")) {
+//            Call<Poke> pokeCall = pokeService.getPokemonById(Integer.toString((int) (Math.random() * 807 + 1)));
+//            pokeCall.enqueue(new Callback<Poke>() {
+//                @Override
+//                public void onResponse(Call<Poke> call, Response<Poke> response) {
+//                    // ANY CODE THAT DEPENDS ON THE RESULT OF THE SEARCH HAS TO GO HERE
+//                    Poke foundPoke = response.body();
+//                    // check if the body isn't null
+//                    if (foundPoke != null) {
+//                        textViewName.setText("Name: " + foundPoke.getName());
+//                        height = Double.parseDouble(foundPoke.getHeight()) / 10;
+//                        textViewHeight.setText("Height: " + height + "m");
+//                        weight = Double.parseDouble(foundPoke.getWeight()) / 10;
+//                        textViewWeight.setText("Weight :" + weight + "kg");
+//                    }
+//                }
+//
+//                @Override
+//                public void onFailure(Call<Poke> call, Throwable t) {
+//                    // TOAST THE FAILURE
+//                    Toast.makeText(MainActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
+//                }
+//            });
+//        }
+//        else {
+//
+//        }
+//    }
 
     private void wireWidgets() {
         buttonSearch = findViewById(R.id.button_main_search);
