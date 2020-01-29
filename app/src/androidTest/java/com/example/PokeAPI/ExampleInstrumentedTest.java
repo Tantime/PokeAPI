@@ -1,4 +1,4 @@
-package com.example.ihateapis;
+package com.example.PokeAPI;
 
 import android.content.Context;
 

@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='I Hate APIs'
+rootProject.name='PokeAPI'
